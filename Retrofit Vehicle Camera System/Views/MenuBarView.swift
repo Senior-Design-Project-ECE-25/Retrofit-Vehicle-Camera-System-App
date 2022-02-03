@@ -9,12 +9,25 @@ import SwiftUI
 
 struct MenuBarView: View {
     var body: some View {
-        Text("Hello from the menu bar!")
+        TabView {
+            VideoView()
+            .tabItem {
+                Image(systemName: "video.circle")
+                Text("Video Feed")
+            }
+
+            AboutView()
+            .tabItem {
+                Image(systemName: "info.circle")
+                Text("About")
+            }
+        }
     }
 }
 
 struct MenuBarView_Previews: PreviewProvider {
     static var previews: some View {
         MenuBarView()
+            .preferredColorScheme(.dark)
     }
 }

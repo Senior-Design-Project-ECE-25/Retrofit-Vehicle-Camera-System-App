@@ -11,7 +11,7 @@ import SwiftUI
 struct Retrofit_Vehicle_Camera_SystemApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VideoView()
         }
     }
 }

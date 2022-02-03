@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */; };
 		71086D5027AB246400E327A9 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4F27AB246400E327A9 /* MenuBarView.swift */; };
+		71898FD127AC4ACA000F6867 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898FD027AC4ACA000F6867 /* AboutView.swift */; };
 		71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */; };
-		71BC9C9E27A88B58006E70CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9D27A88B58006E70CA /* ContentView.swift */; };
+		71BC9C9E27A88B58006E70CA /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9D27A88B58006E70CA /* VideoView.swift */; };
 		71BC9CA027A88B59006E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9C9F27A88B59006E70CA /* Assets.xcassets */; };
 		71BC9CA327A88B59006E70CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,9 +19,10 @@
 /* Begin PBXFileReference section */
 		71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		71086D4F27AB246400E327A9 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		71898FD027AC4ACA000F6867 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		71BC9C9827A88B58006E70CA /* Retrofit Vehicle Camera System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retrofit Vehicle Camera System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retrofit_Vehicle_Camera_SystemApp.swift; sourceTree = "<group>"; };
-		71BC9C9D27A88B58006E70CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71BC9C9D27A88B58006E70CA /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		71BC9C9F27A88B59006E70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,9 +41,10 @@
 		71086D4B27AB1A2800E327A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71BC9C9D27A88B58006E70CA /* ContentView.swift */,
-				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
+				71898FD027AC4ACA000F6867 /* AboutView.swift */,
+				71BC9C9D27A88B58006E70CA /* VideoView.swift */,
 				71086D4F27AB246400E327A9 /* MenuBarView.swift */,
+				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,10 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BC9C9E27A88B58006E70CA /* ContentView.swift in Sources */,
+				71BC9C9E27A88B58006E70CA /* VideoView.swift in Sources */,
 				71086D5027AB246400E327A9 /* MenuBarView.swift in Sources */,
 				71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */,
 				71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */,
+				71898FD127AC4ACA000F6867 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
