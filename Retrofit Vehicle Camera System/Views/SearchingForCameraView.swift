@@ -18,11 +18,11 @@ struct SearchingForCameraView: View {
                 .scaledToFit()
                 .frame(width: 50, height: 50)
                 
-            Text("Camera not connected.")
+            Text("Camera not connected")
                 .font(.largeTitle)
                 .bold()
                 .padding(.top, 150)
-            Text("Please connect the camera unit via Bluetooth.")
+            Text("Please connect the camera unit via Bluetooth")
                 .font(.callout)
                 .padding(.bottom, 150)
             
@@ -59,6 +59,5 @@ struct SearchingForCameraView: View {
 struct SearchingForCameraView_Previews: PreviewProvider {
     static var previews: some View {
         SearchingForCameraView()
-            //.preferredColorScheme(.dark)
     }
 }

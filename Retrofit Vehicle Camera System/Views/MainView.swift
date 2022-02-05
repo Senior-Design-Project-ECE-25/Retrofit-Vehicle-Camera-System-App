@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @ObservedObject var AboutModel = AboutPageModel()
     var cameraIsConnected: Bool = false
     
     var body: some View {
@@ -18,7 +19,7 @@ struct MainView: View {
                 Text("Video Feed")
             }
 
-            AboutView()
+            AboutView(model: AboutModel)
             .tabItem {
                 Image(systemName: "info.circle")
                 Text("About")

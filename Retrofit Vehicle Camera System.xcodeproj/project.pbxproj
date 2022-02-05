@@ -15,6 +15,10 @@
 		71BC9CA027A88B59006E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9C9F27A88B59006E70CA /* Assets.xcassets */; };
 		71BC9CA327A88B59006E70CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */; };
 		71DF3C7A27AE1C46008080E0 /* SearchingForCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */; };
+		71DF3C7C27AE2BD3008080E0 /* AboutPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */; };
+		71DF3C7E27AE2D31008080E0 /* About.json in Resources */ = {isa = PBXBuildFile; fileRef = 71DF3C7D27AE2D31008080E0 /* About.json */; };
+		71DF3C8127AE2FD9008080E0 /* AboutPageEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */; };
+		71DF3C8327AE3FA8008080E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C8227AE3FA8008080E0 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		71BC9C9F27A88B59006E70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingForCameraView.swift; sourceTree = "<group>"; };
+		71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageModel.swift; sourceTree = "<group>"; };
+		71DF3C7D27AE2D31008080E0 /* About.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = About.json; sourceTree = "<group>"; };
+		71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageEntry.swift; sourceTree = "<group>"; };
+		71DF3C8227AE3FA8008080E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 				71898FD027AC4ACA000F6867 /* AboutView.swift */,
 				71BC9C9D27A88B58006E70CA /* VideoFeedView.swift */,
 				71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */,
+				71DF3C8227AE3FA8008080E0 /* SettingsView.swift */,
 				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
 			);
 			path = Views;
@@ -55,6 +64,7 @@
 		71086D4C27AB1A4100E327A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,9 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */,
-				71086D4B27AB1A2800E327A9 /* Views */,
 				71086D4C27AB1A4100E327A9 /* Models */,
+				71086D4B27AB1A2800E327A9 /* Views */,
+				71DF3C7F27AE2FAE008080E0 /* ViewModels */,
 				71BC9C9F27A88B59006E70CA /* Assets.xcassets */,
+				71DF3C7D27AE2D31008080E0 /* About.json */,
 				71BC9CA127A88B59006E70CA /* Preview Content */,
 			);
 			path = "Retrofit Vehicle Camera System";
@@ -93,6 +105,14 @@
 				71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71DF3C7F27AE2FAE008080E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DF3C7E27AE2D31008080E0 /* About.json in Resources */,
 				71BC9CA327A88B59006E70CA /* Preview Assets.xcassets in Resources */,
 				71BC9CA027A88B59006E70CA /* Assets.xcassets in Resources */,
 			);
@@ -166,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DF3C7A27AE1C46008080E0 /* SearchingForCameraView.swift in Sources */,
+				71DF3C8127AE2FD9008080E0 /* AboutPageEntry.swift in Sources */,
 				71BC9C9E27A88B58006E70CA /* VideoFeedView.swift in Sources */,
+				71DF3C8327AE3FA8008080E0 /* SettingsView.swift in Sources */,
 				71086D5027AB246400E327A9 /* MainView.swift in Sources */,
+				71DF3C7C27AE2BD3008080E0 /* AboutPageModel.swift in Sources */,
 				71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */,
 				71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */,
 				71898FD127AC4ACA000F6867 /* AboutView.swift in Sources */,
