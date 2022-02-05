@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct MenuBarView: View {
+struct MainView: View {
+    var cameraIsConnected: Bool = false
+    
     var body: some View {
         TabView {
-            VideoView()
+            VideoFeedView(isEstablished: cameraIsConnected)
             .tabItem {
                 Image(systemName: "video.circle")
                 Text("Video Feed")
@@ -27,7 +29,7 @@ struct MenuBarView: View {
 
 struct MenuBarView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuBarView()
+        MainView()
             .preferredColorScheme(.dark)
     }
 }
