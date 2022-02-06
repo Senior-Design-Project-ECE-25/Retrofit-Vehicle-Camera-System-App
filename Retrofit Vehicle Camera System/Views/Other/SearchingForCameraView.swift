@@ -12,15 +12,26 @@ struct SearchingForCameraView: View {
     
     var body: some View {
         VStack {
-            
+            Text("?")
+                .font(.largeTitle)
+                .bold()
+                .rotationEffect(Angle(degrees: shouldAnimate ? -22.5 : 22.5))
+                .animation(
+                    Animation.easeInOut(duration: 1)
+                        .repeatForever(autoreverses: true),
+                    value: shouldAnimate
+                )
+                .padding(.bottom, -5)
+
             Image(systemName: "camera.fill")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
                 
-            Text("Camera not connected")
+            Text("Waiting for Camera Connection")
                 .font(.largeTitle)
                 .bold()
+                .multilineTextAlignment(.center)
                 .padding(.top, 150)
             Text("Please connect the camera unit via Bluetooth")
                 .font(.callout)

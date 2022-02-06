@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
+
     let settings: [String: String] = [
         "Model": "Rasberry Pi Zero W",
         "Software Version": "1.0.0 Beta",

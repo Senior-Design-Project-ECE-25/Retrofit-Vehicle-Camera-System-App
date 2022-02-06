@@ -14,13 +14,13 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            VideoFeedPageView(isEstablished: cameraIsConnected)
+            VideoFeedPageView(isConnectionEstablished: cameraIsConnected)
             .tabItem {
                 Image(systemName: "video.circle")
                 Text("Video Feed")
             }
 
-            AboutPageView()
+            AboutPageView(cameraConnectionIsEstablished: cameraIsConnected)
                 .environmentObject(aboutPageViewModel)
             .tabItem {
                 Image(systemName: "info.circle")

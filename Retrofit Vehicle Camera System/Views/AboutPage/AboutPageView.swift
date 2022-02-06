@@ -11,28 +11,39 @@ struct AboutPageView: View {
     
     @EnvironmentObject var aboutPageViewModel: AboutPageViewModel
     @State var showSettingsView = false
+    @State var showSettingsAlert = false
+    @State var cameraConnectionIsEstablished: Bool
     
     var body: some View {
         NavigationView {
-            ZStack{
-                VStack {
-                    Spacer() // Added to prevent list from being caught under Nav
-                    
-                    AboutBodyView()
-                        .environmentObject(aboutPageViewModel)
+            VStack {
+                Spacer() // Added to prevent list from being caught under Nav
+                
+                AboutBodyView()
+                    .environmentObject(aboutPageViewModel)
 
-                    AboutFooterView()
-                    
-                    // Nav Link allows for Settings Gear button to nav to SettingsView
-                    NavigationLink(destination: SettingsView(), isActive: $showSettingsView) {
-                        EmptyView()
-                    }
-                    .isDetailLink(false)
+                AboutFooterView()
+                
+                // Nav Link allows for Settings Gear button to nav to SettingsView
+                NavigationLink(
+                    destination: SettingsView(),
+                    isActive: $showSettingsView) {
+                    EmptyView()
                 }
+                .isDetailLink(false)
+            }
+            .alert(isPresented: $showSettingsAlert) {
+                Alert(title: Text("Camera Unit Not Connected"),
+                      message: Text("To view the Camera Unit's settings, connect it via bluetooth."),
+                      dismissButton: .cancel())
             }
             .navigationTitle("About")
             .navigationBarItems(trailing: Button(action: {
-                self.showSettingsView = true
+                if cameraConnectionIsEstablished {
+                    self.showSettingsView = true
+                } else {
+                    self.showSettingsAlert = true
+                }
             }) {
                 VStack {
                     Spacer()
@@ -40,6 +51,7 @@ struct AboutPageView: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                         .clipShape(Circle())
+                        .foregroundColor(cameraConnectionIsEstablished ? .accentColor : .secondary)
                 }
             })
         }
@@ -49,7 +61,7 @@ struct AboutPageView: View {
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutPageView()
+        AboutPageView(cameraConnectionIsEstablished: false)
             .environmentObject(AboutPageViewModel())
             .preferredColorScheme(.dark)
     }

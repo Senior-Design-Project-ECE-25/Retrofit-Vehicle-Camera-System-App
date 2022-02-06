@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct VideoFeedPageView: View {
-    @State var isEstablished: Bool = false
+    @State var isConnectionEstablished: Bool = false
     
     var body: some View {
-        if isEstablished {
+        if isConnectionEstablished {
             Image("defaultVideoPlayer")
                 .resizable()
                 .aspectRatio(4/5, contentMode: .fit)
