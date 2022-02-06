@@ -16,27 +16,10 @@ struct AboutPageView: View {
         NavigationView {
             ZStack{
                 VStack {
-                    Spacer()
-                    List {
-                        ForEach(aboutPageViewModel.entries.sorted {$0.id < $1.id}) { entry in
-                            Group {
-                                HStack {
-                                    Spacer()
-                                    Text("\(entry.title)")
-                                        .font(.title2)
-                                        .bold()
-                                    Spacer()
-                                }
-                                Text(entry.body)
-                                    .font(.body)
-                            }
-                            .padding(.bottom, 5)
-                        }
-                    }
-                    .listStyle(PlainListStyle())
-                    .mask(
-                        LinearGradient(gradient: Gradient(colors: [Color.primary, Color.black.opacity(0.8)]), startPoint: .center, endPoint: .bottom)
-                    )
+                    Spacer() // Added to prevent list from being caught under Nav
+                    
+                    AboutBodyView()
+                        .environmentObject(aboutPageViewModel)
 
                     AboutFooterView()
                     

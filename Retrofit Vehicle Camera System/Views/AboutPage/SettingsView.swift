@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    let settings: [String: String] = [
+        "Model": "Rasberry Pi Zero W",
+        "Software Version": "1.0.0 Beta",
+        "MAC Address": "00:00:00:00:00:00",
+        "Bluetooth Address": "00:00:00:00:00:00",
+        "Serial Number": "XXXXXXXXXXXX"
+    ]
+    
     var body: some View {
         List {
-            ForEach(1...10, id: \.self) { _ in
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ForEach(settings.sorted(by: >), id: \.key) { setting, value in
+                HStack {
+                    Text(setting)
+                    Spacer()
+                    Text(value)
+                        .foregroundColor(.secondary)
+                }
             }
+            .padding(.horizontal, 5)
         }
     }
 }
