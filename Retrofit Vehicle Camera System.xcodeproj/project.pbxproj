@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */; };
 		71086D5027AB246400E327A9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4F27AB246400E327A9 /* MainView.swift */; };
-		71898FD127AC4ACA000F6867 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898FD027AC4ACA000F6867 /* AboutView.swift */; };
+		71639F3C27AF4CC6000CB109 /* AboutFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */; };
+		71898FD127AC4ACA000F6867 /* AboutPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898FD027AC4ACA000F6867 /* AboutPageView.swift */; };
 		71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */; };
-		71BC9C9E27A88B58006E70CA /* VideoFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9D27A88B58006E70CA /* VideoFeedView.swift */; };
+		71BC9C9E27A88B58006E70CA /* VideoFeedPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9D27A88B58006E70CA /* VideoFeedPageView.swift */; };
 		71BC9CA027A88B59006E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9C9F27A88B59006E70CA /* Assets.xcassets */; };
 		71BC9CA327A88B59006E70CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */; };
 		71DF3C7A27AE1C46008080E0 /* SearchingForCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */; };
-		71DF3C7C27AE2BD3008080E0 /* AboutPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */; };
+		71DF3C7C27AE2BD3008080E0 /* AboutPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C7B27AE2BD3008080E0 /* AboutPageViewModel.swift */; };
 		71DF3C7E27AE2D31008080E0 /* About.json in Resources */ = {isa = PBXBuildFile; fileRef = 71DF3C7D27AE2D31008080E0 /* About.json */; };
 		71DF3C8127AE2FD9008080E0 /* AboutPageEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */; };
 		71DF3C8327AE3FA8008080E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF3C8227AE3FA8008080E0 /* SettingsView.swift */; };
@@ -24,14 +25,15 @@
 /* Begin PBXFileReference section */
 		71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		71086D4F27AB246400E327A9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		71898FD027AC4ACA000F6867 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFooterView.swift; sourceTree = "<group>"; };
+		71898FD027AC4ACA000F6867 /* AboutPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageView.swift; sourceTree = "<group>"; };
 		71BC9C9827A88B58006E70CA /* Retrofit Vehicle Camera System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retrofit Vehicle Camera System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retrofit_Vehicle_Camera_SystemApp.swift; sourceTree = "<group>"; };
-		71BC9C9D27A88B58006E70CA /* VideoFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedView.swift; sourceTree = "<group>"; };
+		71BC9C9D27A88B58006E70CA /* VideoFeedPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedPageView.swift; sourceTree = "<group>"; };
 		71BC9C9F27A88B59006E70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BC9CA227A88B59006E70CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingForCameraView.swift; sourceTree = "<group>"; };
-		71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageModel.swift; sourceTree = "<group>"; };
+		71DF3C7B27AE2BD3008080E0 /* AboutPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewModel.swift; sourceTree = "<group>"; };
 		71DF3C7D27AE2D31008080E0 /* About.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = About.json; sourceTree = "<group>"; };
 		71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageEntry.swift; sourceTree = "<group>"; };
 		71DF3C8227AE3FA8008080E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -52,11 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				71086D4F27AB246400E327A9 /* MainView.swift */,
-				71898FD027AC4ACA000F6867 /* AboutView.swift */,
-				71BC9C9D27A88B58006E70CA /* VideoFeedView.swift */,
-				71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */,
-				71DF3C8227AE3FA8008080E0 /* SettingsView.swift */,
-				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
+				71639F3D27AF4D3A000CB109 /* AboutPage */,
+				71639F3E27AF4D4B000CB109 /* VideoFeedPage */,
+				71639F3F27AF4DD6000CB109 /* Other */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -67,6 +67,33 @@
 				71DF3C8027AE2FD9008080E0 /* AboutPageEntry.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		71639F3D27AF4D3A000CB109 /* AboutPage */ = {
+			isa = PBXGroup;
+			children = (
+				71898FD027AC4ACA000F6867 /* AboutPageView.swift */,
+				71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */,
+				71DF3C8227AE3FA8008080E0 /* SettingsView.swift */,
+			);
+			path = AboutPage;
+			sourceTree = "<group>";
+		};
+		71639F3E27AF4D4B000CB109 /* VideoFeedPage */ = {
+			isa = PBXGroup;
+			children = (
+				71BC9C9D27A88B58006E70CA /* VideoFeedPageView.swift */,
+				71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */,
+			);
+			path = VideoFeedPage;
+			sourceTree = "<group>";
+		};
+		71639F3F27AF4DD6000CB109 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		71BC9C8F27A88B58006E70CA = {
@@ -110,7 +137,7 @@
 		71DF3C7F27AE2FAE008080E0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				71DF3C7B27AE2BD3008080E0 /* AboutPageModel.swift */,
+				71DF3C7B27AE2BD3008080E0 /* AboutPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,13 +215,14 @@
 			files = (
 				71DF3C7A27AE1C46008080E0 /* SearchingForCameraView.swift in Sources */,
 				71DF3C8127AE2FD9008080E0 /* AboutPageEntry.swift in Sources */,
-				71BC9C9E27A88B58006E70CA /* VideoFeedView.swift in Sources */,
+				71BC9C9E27A88B58006E70CA /* VideoFeedPageView.swift in Sources */,
 				71DF3C8327AE3FA8008080E0 /* SettingsView.swift in Sources */,
+				71639F3C27AF4CC6000CB109 /* AboutFooterView.swift in Sources */,
 				71086D5027AB246400E327A9 /* MainView.swift in Sources */,
-				71DF3C7C27AE2BD3008080E0 /* AboutPageModel.swift in Sources */,
+				71DF3C7C27AE2BD3008080E0 /* AboutPageViewModel.swift in Sources */,
 				71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */,
 				71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */,
-				71898FD127AC4ACA000F6867 /* AboutView.swift in Sources */,
+				71898FD127AC4ACA000F6867 /* AboutPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

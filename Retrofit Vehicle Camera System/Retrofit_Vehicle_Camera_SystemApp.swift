@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct Retrofit_Vehicle_Camera_SystemApp: App {
+    
+    @StateObject var aboutPageViewModel = AboutPageViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ZStack {
                 MainView()
+                    .environmentObject(aboutPageViewModel)
                 SplashScreenView()
             }
         }

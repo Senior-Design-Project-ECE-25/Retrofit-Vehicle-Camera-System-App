@@ -8,29 +8,33 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var AboutModel = AboutPageModel()
+
+    @EnvironmentObject var aboutPageViewModel: AboutPageViewModel
     var cameraIsConnected: Bool = false
     
     var body: some View {
         TabView {
-            VideoFeedView(isEstablished: cameraIsConnected)
+            VideoFeedPageView(isEstablished: cameraIsConnected)
             .tabItem {
                 Image(systemName: "video.circle")
                 Text("Video Feed")
             }
 
-            AboutView(model: AboutModel)
+            AboutPageView()
+                .environmentObject(aboutPageViewModel)
             .tabItem {
                 Image(systemName: "info.circle")
                 Text("About")
             }
         }
     }
+
 }
 
 struct MenuBarView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(AboutPageViewModel())
             .preferredColorScheme(.dark)
     }
 }
