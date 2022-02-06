@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AboutPageEntry: Hashable, Decodable {
+struct AboutPageEntry: Identifiable, Decodable {
     var id: Int
     var title: String
     var body: String

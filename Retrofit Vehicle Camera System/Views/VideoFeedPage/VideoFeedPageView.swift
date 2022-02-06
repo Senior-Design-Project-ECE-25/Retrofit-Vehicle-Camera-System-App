@@ -1,5 +1,5 @@
 //
-//  VideoFeedView.swift
+//  VideoFeedPageView.swift
 //  Retrofit Vehicle Camera System
 //
 //  Created by Jack McVeigh on 1/31/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VideoFeedView: View {
+struct VideoFeedPageView: View {
     @State var isEstablished: Bool = false
     
     var body: some View {
@@ -23,6 +23,6 @@ struct VideoFeedView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoFeedView()
+        VideoFeedPageView()
     }
 }
