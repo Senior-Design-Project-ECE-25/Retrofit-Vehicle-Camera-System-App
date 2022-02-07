@@ -33,8 +33,13 @@ struct MainView: View {
 
 struct MenuBarView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
-            .environmentObject(AboutPageViewModel())
-            .preferredColorScheme(.dark)
+        Group {
+            MainView()
+                .environmentObject(AboutPageViewModel())
+            
+            MainView()
+                .environmentObject(AboutPageViewModel())
+                .preferredColorScheme(.dark)
+        }
     }
 }
