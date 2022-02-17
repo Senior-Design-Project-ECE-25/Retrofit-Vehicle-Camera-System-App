@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
 
     @EnvironmentObject var aboutPageViewModel: AboutPageViewModel
-    var cameraIsConnected: Bool = false
+    @State var cameraIsConnected: Bool = false
     
     var body: some View {
         TabView {
@@ -28,7 +28,6 @@ struct MainView: View {
             }
         }
     }
-
 }
 
 struct MenuBarView_Previews: PreviewProvider {
@@ -36,6 +35,7 @@ struct MenuBarView_Previews: PreviewProvider {
         Group {
             MainView()
                 .environmentObject(AboutPageViewModel())
+                .previewInterfaceOrientation(.portrait)
             
             MainView()
                 .environmentObject(AboutPageViewModel())

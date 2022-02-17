@@ -55,6 +55,7 @@ struct AboutPageView: View {
                 }
             })
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 
 }

@@ -11,18 +11,18 @@ struct AboutFooterView: View {
     var body: some View {
         VStack {
             Link("Learn more on our GitHub", destination: URL(string: "https://github.com/Senior-Design-Project-ECE-25")!)
-                .foregroundColor(.blue)
+                .foregroundColor(Color.theme.accentColor)
                 .padding(.vertical, 5)
             
             Text("Designed By:\nECE 25")
                 .bold()
-                .foregroundColor(.secondary)
+                .foregroundColor(Color.theme.secondaryTextColor)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 1)
 
             Text("Members: Jack McVeigh, Shawn McHugh, Clay Sheffield")
                 .font(.caption)
-                .foregroundColor(.secondary)
+                .foregroundColor(Color.theme.secondaryTextColor)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 10)
         }

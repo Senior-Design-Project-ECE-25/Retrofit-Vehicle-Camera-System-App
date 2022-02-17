@@ -12,7 +12,7 @@ struct SplashScreenView: View {
 
     var body: some View {
         ZStack(alignment: .center) {
-            Color(UIColor.systemBackground)
+            Color.theme.backgroundColor
                 .ignoresSafeArea()
             Circle()
                 .fill(.black)
