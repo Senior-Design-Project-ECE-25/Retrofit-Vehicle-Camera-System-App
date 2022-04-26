@@ -19,10 +19,9 @@ struct AboutPageView: View {
             VStack {
                 Spacer() // Added to prevent list from being caught under Nav
                 
-                AboutBodyView()
-                    .environmentObject(aboutPageViewModel)
+                bodyView
 
-                AboutFooterView()
+                footerView
                 
                 // Nav Link allows for Settings Gear button to nav to SettingsView
                 NavigationLink(
@@ -64,5 +63,50 @@ struct AboutView_Previews: PreviewProvider {
         AboutPageView(cameraConnectionIsEstablished: false)
             .environmentObject(AboutPageViewModel())
             .preferredColorScheme(.dark)
+    }
+}
+
+extension AboutPageView {
+    var bodyView: some View {
+        List {
+            ForEach(aboutPageViewModel.entries.sorted {$0.id < $1.id}) { entry in
+                Group {
+                    HStack {
+                        Spacer()
+                        Text("\(entry.title)")
+                            .font(.title2)
+                            .bold()
+                        Spacer()
+                    }
+                    Text(entry.body)
+                        .font(.body)
+                }
+                .padding(.bottom, 5)
+            }
+        }
+        .listStyle(PlainListStyle())
+        .mask(
+            LinearGradient(gradient: Gradient(colors: [Color.primary, Color.black.opacity(0.8)]), startPoint: .center, endPoint: .bottom)
+        )
+    }
+    
+    var footerView: some View {
+        VStack {
+            Link("Learn more on our GitHub", destination: URL(string: "https://github.com/Senior-Design-Project-ECE-25")!)
+                .foregroundColor(.blue)
+                .padding(.vertical, 5)
+            
+            Text("Designed By:\nECE 25")
+                .bold()
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 1)
+
+            Text("Members: Jack McVeigh, Shawn McHugh, Clay Sheffield")
+                .font(.caption)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 10)
+        }
     }
 }

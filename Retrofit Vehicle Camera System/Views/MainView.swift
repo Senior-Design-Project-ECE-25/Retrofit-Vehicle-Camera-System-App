@@ -10,23 +10,28 @@ import SwiftUI
 struct MainView: View {
 
     @EnvironmentObject var aboutPageViewModel: AboutPageViewModel
-    var cameraIsConnected: Bool = false
+    @State var cameraIsConnected: Bool = false
+    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.gray.withAlphaComponent(0.15)
+    }
     
     var body: some View {
         TabView {
             VideoFeedPageView(isConnectionEstablished: cameraIsConnected)
-            .tabItem {
-                Image(systemName: "video.circle")
-                Text("Video Feed")
-            }
+                .tabItem {
+                    Image(systemName: "video.circle")
+                    Text("Video Feed")
+                }
 
             AboutPageView(cameraConnectionIsEstablished: cameraIsConnected)
                 .environmentObject(aboutPageViewModel)
-            .tabItem {
-                Image(systemName: "info.circle")
-                Text("About")
-            }
+                .tabItem {
+                    Image(systemName: "info.circle")
+                    Text("About")
+                }
         }
+        .tint(.accentColor)
     }
 
 }

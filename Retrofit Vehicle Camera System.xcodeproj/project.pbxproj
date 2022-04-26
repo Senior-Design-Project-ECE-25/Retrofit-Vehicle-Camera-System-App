@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		71086D4E27AB1A7100E327A9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */; };
 		71086D5027AB246400E327A9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71086D4F27AB246400E327A9 /* MainView.swift */; };
-		715B0CEC27AF6BD0002CEB10 /* AboutBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B0CEB27AF6BD0002CEB10 /* AboutBodyView.swift */; };
-		71639F3C27AF4CC6000CB109 /* AboutFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */; };
 		71898FD127AC4ACA000F6867 /* AboutPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898FD027AC4ACA000F6867 /* AboutPageView.swift */; };
+		71BBEB9B28188A1100443F05 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBEB9A28188A1100443F05 /* WebView.swift */; };
 		71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */; };
 		71BC9C9E27A88B58006E70CA /* VideoFeedPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC9C9D27A88B58006E70CA /* VideoFeedPageView.swift */; };
 		71BC9CA027A88B59006E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BC9C9F27A88B59006E70CA /* Assets.xcassets */; };
@@ -26,9 +25,9 @@
 /* Begin PBXFileReference section */
 		71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		71086D4F27AB246400E327A9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		715B0CEB27AF6BD0002CEB10 /* AboutBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutBodyView.swift; sourceTree = "<group>"; };
-		71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFooterView.swift; sourceTree = "<group>"; };
 		71898FD027AC4ACA000F6867 /* AboutPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageView.swift; sourceTree = "<group>"; };
+		71BBEB9928187BBA00443F05 /* Retrofit-Vehicle-Camera-System-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Retrofit-Vehicle-Camera-System-Info.plist"; sourceTree = SOURCE_ROOT; };
+		71BBEB9A28188A1100443F05 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		71BC9C9827A88B58006E70CA /* Retrofit Vehicle Camera System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retrofit Vehicle Camera System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retrofit_Vehicle_Camera_SystemApp.swift; sourceTree = "<group>"; };
 		71BC9C9D27A88B58006E70CA /* VideoFeedPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedPageView.swift; sourceTree = "<group>"; };
@@ -75,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				71898FD027AC4ACA000F6867 /* AboutPageView.swift */,
-				715B0CEB27AF6BD0002CEB10 /* AboutBodyView.swift */,
-				71639F3B27AF4CC6000CB109 /* AboutFooterView.swift */,
 				71DF3C8227AE3FA8008080E0 /* SettingsView.swift */,
 			);
 			path = AboutPage;
@@ -95,6 +92,7 @@
 			children = (
 				71DF3C7927AE1C46008080E0 /* SearchingForCameraView.swift */,
 				71086D4D27AB1A7100E327A9 /* SplashScreenView.swift */,
+				71BBEB9A28188A1100443F05 /* WebView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -118,6 +116,7 @@
 		71BC9C9A27A88B58006E70CA /* Retrofit Vehicle Camera System */ = {
 			isa = PBXGroup;
 			children = (
+				71BBEB9928187BBA00443F05 /* Retrofit-Vehicle-Camera-System-Info.plist */,
 				71BC9C9B27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift */,
 				71086D4C27AB1A4100E327A9 /* Models */,
 				71086D4B27AB1A2800E327A9 /* Views */,
@@ -217,11 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DF3C7A27AE1C46008080E0 /* SearchingForCameraView.swift in Sources */,
+				71BBEB9B28188A1100443F05 /* WebView.swift in Sources */,
 				71DF3C8127AE2FD9008080E0 /* AboutPageEntry.swift in Sources */,
 				71BC9C9E27A88B58006E70CA /* VideoFeedPageView.swift in Sources */,
 				71DF3C8327AE3FA8008080E0 /* SettingsView.swift in Sources */,
-				71639F3C27AF4CC6000CB109 /* AboutFooterView.swift in Sources */,
-				715B0CEC27AF6BD0002CEB10 /* AboutBodyView.swift in Sources */,
 				71086D5027AB246400E327A9 /* MainView.swift in Sources */,
 				71DF3C7C27AE2BD3008080E0 /* AboutPageViewModel.swift in Sources */,
 				71BC9C9C27A88B58006E70CA /* Retrofit_Vehicle_Camera_SystemApp.swift in Sources */,
@@ -360,6 +358,7 @@
 				DEVELOPMENT_TEAM = 384WS5S7K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Retrofit-Vehicle-Camera-System-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,6 +388,7 @@
 				DEVELOPMENT_TEAM = 384WS5S7K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Retrofit-Vehicle-Camera-System-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
