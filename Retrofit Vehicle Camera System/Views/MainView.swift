@@ -21,7 +21,7 @@ struct MainView: View {
             VideoFeedPageView(isConnectionEstablished: cameraIsConnected)
                 .tabItem {
                     Image(systemName: "video.circle")
-                    Text("Video Feed")
+                    Text("Camera")
                 }
 
             AboutPageView(cameraConnectionIsEstablished: cameraIsConnected)

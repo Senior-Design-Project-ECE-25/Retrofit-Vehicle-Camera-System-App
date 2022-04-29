@@ -10,48 +10,47 @@ import SwiftUI
 
 struct VideoFeedPageView: View {
     @State var isConnectionEstablished: Bool = false
-    private let videoFeedUrl = "http://192.168.86.40:23451/api/v1/VideoFeed"
+    private let videoFeedUrl = "http://69.242.79.165:23451/api/v1/VideoFeed/Flex"
 
     var body: some View {
-        VStack {
+        ZStack {
             if isConnectionEstablished {
-                VStack {
-                    HStack {
-                        Text("Backup Camera")
-                            .font(.title)
-                            .bold()
-                        Spacer()
-                        Image(systemName: "rotate.left")
-                    }
-                    .padding(.horizontal, 30)
+                NavigationView {
+                    VStack {
 
-                    Divider()
-                        .padding(.top, -15)
-                    
-                    Spacer()
-                
-                    WebView(url: URL(string: videoFeedUrl)!)
-                        .frame(width: 320, height: 240)
-                    
-                    Spacer()
+                        Divider()
+                        
+                        ZStack {
+                            Text("Loading...")
+                                .font(.title)
+                                .bold()
+                            WebView(url: URL(string: videoFeedUrl)!)
+                        }
+                    }
+                    .navigationTitle("Camera")
                 }
             } else {
                 SearchingForCameraView()
             }
+            
+            VStack {
+                Spacer()
 
-            Button() {
-                isConnectionEstablished.toggle()
-            }
-            label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 50)
-                        .fill(Color.secondary)
-                    Text("DEBUG: Toggle Camera Connection")
-                        .foregroundColor(Color.green)
-                        .font(.title3)
+                Button() {
+                    isConnectionEstablished.toggle()
                 }
-                .frame(maxWidth: .infinity, maxHeight: 50)
-                .padding(.horizontal)
+                label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                            .fill(Color.secondary)
+                        Text("DEBUG: Toggle Camera Connection")
+                            .foregroundColor(Color.red)
+                            .font(.title3)
+                            .bold()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .padding()
+                }
             }
         }
     }
